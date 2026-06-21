@@ -1,2 +1,2 @@
 import streamlit as st
-from app.dashboard import *
+from dashboard import *
