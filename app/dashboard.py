@@ -397,6 +397,60 @@ with col3:
 
 with col4:
     st.metric("Avg Response Time", "11 min")
+
+# ==========================================
+# SMART TRAFFIC MAP
+# ==========================================
+
+st.markdown("---")
+
+st.header("🗺️ Bengaluru Smart Traffic Map")
+
+m = folium.Map(
+    location=[12.9716, 77.5946],  # Bengaluru
+    zoom_start=11
+)
+
+# Central Bengaluru (MG Road)
+folium.Marker(
+    [12.9755, 77.6068],
+    popup="Central Zone",
+    icon=folium.Icon(color="orange")
+).add_to(m)
+
+# North Bengaluru (Hebbal)
+folium.Marker(
+    [13.0358, 77.5970],
+    popup="North Zone",
+    icon=folium.Icon(color="red")
+).add_to(m)
+
+# South Bengaluru (Jayanagar)
+folium.Marker(
+    [12.9250, 77.5938],
+    popup="South Zone",
+    icon=folium.Icon(color="green")
+).add_to(m)
+
+# East Bengaluru (Whitefield)
+folium.Marker(
+    [12.9698, 77.7499],
+    popup="East Zone",
+    icon=folium.Icon(color="orange")
+).add_to(m)
+
+# West Bengaluru (Rajajinagar)
+folium.Marker(
+    [12.9916, 77.5553],
+    popup="West Zone",
+    icon=folium.Icon(color="green")
+).add_to(m)
+
+st_folium(
+    m,
+    width=1200,
+    height=500
+)
 # ==========================================
 # FOOTER
 # ==========================================
