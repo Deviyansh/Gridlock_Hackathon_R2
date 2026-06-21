@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import folium
 from streamlit_folium import st_folium
-from predictor import predict_priority
-from recommender import generate_recommendation
+from app.predictor import predict_priority
+from app.recommender import generate_recommendation
 
 # ==========================================
 # PAGE CONFIG
