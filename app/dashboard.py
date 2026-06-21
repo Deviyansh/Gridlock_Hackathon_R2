@@ -446,11 +446,6 @@ folium.Marker(
     icon=folium.Icon(color="green")
 ).add_to(m)
 
-st_folium(
-    m,
-    width=1200,
-    height=500
-)
 # ==========================================
 # FOOTER
 # ==========================================
