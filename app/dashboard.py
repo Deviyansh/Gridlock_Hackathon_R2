@@ -404,7 +404,7 @@ with col4:
 
 st.markdown("---")
 
-st.header("🗺️ Bengaluru Smart Traffic Map")
+##st.header("🗺️ Bengaluru Smart Traffic Map")
 
 m = folium.Map(
     location=[12.9716, 77.5946],  # Bengaluru
@@ -446,11 +446,11 @@ folium.Marker(
     icon=folium.Icon(color="green")
 ).add_to(m)
 
-st_folium(
-    m,
-    width=1200,
-    height=500
-)
+#st_folium(
+ #   m,
+  #  width=1200,
+   # height=500
+#)
 # ==========================================
 # FOOTER
 # ==========================================
